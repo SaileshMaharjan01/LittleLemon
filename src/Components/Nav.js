@@ -9,7 +9,7 @@ import OrderOnline from './OrderOnline'
 import LogIn from '../Forms/LogIn'
 import '../App.css'
 function Nav() {
-  return (
+    return (
     <div className='fixed'>
        <nav className='nav'>
         <img src={logo} alt='logo'style={{margin:10}}/>
@@ -49,31 +49,3 @@ function Nav() {
 
 export default Nav
 
-/* 
-   <li>
-                    <Link to='/about' className=''>About</Link>
-                </li>
-                <li>
-                    <Link to='/menu' className=''>Menu</Link>
-                </li>
-                <li>
-                    <Link to='/reservation' className=''>Reservation</Link>
-                </li>
-                <li>
-                    <Link to='/order-online' className=''>Order Online</Link>
-                </li>
-                <li>
-                    <Link to='/log-in' className=''>Log in</Link>
-                </li>
-
-
-
-                 <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/menu' element={<Menu/>}/>
-            <Route path='/reservation' element={<Reservation/>}/>
-            <Route path='/order-online' element={<OrderOnline/>}/>
-            <Route path='/log-in' element={<LogIn/>}/>
-        </Routes>
-*/

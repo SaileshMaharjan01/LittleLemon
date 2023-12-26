@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 import food from '../icons_assets/restauranfood.jpg'
 import  salad from '../icons_assets/greek salad.jpg'
 import delivery from '../icons_assets/local_shipping_FILL0_wght400_GRAD0_opsz24.svg'
@@ -8,16 +9,13 @@ import owner1 from '../icons_assets/Mario and Adrian A.jpg'
 import owner2 from '../icons_assets/Mario and Adrian b.jpg'
 import '../App.css'
 
-const Header=()=>{
+export const Header=(props)=>{
     return(
         <header className='header'>
             <div className='intro'>
                 <h1 className='heading'>Little Lemon</h1>
                 <h2 className='heading-two'>Chicago</h2>
-                <p className='para'>We are a family owned
-                    meditteranean restaursant,
-                    focused on traditional recipes served with a 
-                    modern twist.
+                <p className='para'>{props.text}
                 </p>
             </div>
             <img src={food} alt='food' className='hero'/>
@@ -186,10 +184,14 @@ const About=()=>{
 function Home() {
   return (
     <div>
-        <Header/>
+        <Header text='We are a family owned
+                    meditteranean restaursant,
+                    focused on traditional recipes served with a 
+                    modern twist.'/>
         <SpecialsSection/>
         <Testimonials/>
         <About/>
+        <Footer/>
     </div>
   )
 }
